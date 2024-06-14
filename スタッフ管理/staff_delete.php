@@ -2,15 +2,15 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>商品削除
+        <title>スタッフ情報削除
         </title>
     </head>
     <body>
     
-    商品削除<br>
+    スタッフ情報削除<br>
     <br>
-    <form method="post"action="product_delete_check.php">
-    商品コードを入力してください。<br>
+    <form method="post"action="staff_delete_check.php">
+    スタッフコードを入力してください。<br>
     <input type="text"name="code"style="width: 50px"><br>
     <input type="button"onclick="history.back()"value="戻る">
     <input type="submit"value="OK">
