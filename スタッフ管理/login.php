@@ -78,7 +78,7 @@
 </div>
 
 <div class="login-form">
-    <h2>IDとパスワードを入力してください</h2>
+    <h2>IDとパスワードを入力してください。</h2>
 
     <form method="post" action="login_check.php">
         <label for="code">スタッフコード</label>
