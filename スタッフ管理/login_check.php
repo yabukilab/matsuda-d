@@ -38,7 +38,7 @@ $rec=$stmt->fetch(PDO::FETCH_ASSOC);
 if($rec==false)
 {
     print'スタッフコードかパスワードが間違っています。<br>';
-    print'<a href="staff_login.html">戻る</a>';
+    print'<a href="login.php">戻る</a>';
 }
 else
 {
