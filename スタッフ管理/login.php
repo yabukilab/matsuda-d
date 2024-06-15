@@ -67,6 +67,7 @@
         }
 
         .login-form input[type="submit"]:hover {
+            
             background-color: #0052a3;
         }
     </style>
