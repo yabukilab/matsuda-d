@@ -10,7 +10,7 @@
 
         require 'db(2).php';
 
-        $p_code=$_POST['code'];
+        $s_code_code=$_POST['code'];
 
     try
     {
@@ -20,7 +20,7 @@
 
 				$sql='DELETE FROM 管理者情報管理 WHERE code = :code';
 				$stmt=$db->prepare($sql);
-				$stmt->bindValue(':code', $p_code, PDO::PARAM_INT);
+				$stmt->bindValue(':code', $s_code, PDO::PARAM_INT);
 				$stmt->execute();
 
 				$db=null;
@@ -34,7 +34,7 @@
 			}
 
 		?>
-		<a href="admin_top.php">戻る</a>
+		<a href="s_admin_top.php">戻る</a>
 
     </body>
 </html>
