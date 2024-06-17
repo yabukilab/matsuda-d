@@ -10,7 +10,7 @@
 
         require 'db(2).php';
 
-        $s_code_code=$_POST['code'];
+        $s_code=$_POST['code'];
 
     try
     {
