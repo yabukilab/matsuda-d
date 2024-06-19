@@ -44,7 +44,7 @@ catch(Exception $e)
 
 ?>
 
-商品修正<br />
+スタッフ情報修正<br />
 <br />
 
 <form method="post" action="staff_edit_done.php">
