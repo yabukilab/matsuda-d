@@ -29,7 +29,7 @@ $result = $conn->query($sql);
 // データを表示
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
-        echo "code: " . $row["code"] . " Name: " . $row["name"] ."<br>";
+        echo " スタッフコード: " . $row["code"] . " 名前: " . $row["name"] ."<br>";
     }
 } else {
     echo "0 results";
