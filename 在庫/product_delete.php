@@ -13,7 +13,7 @@
     商品コードを入力してください。<br>
     <input type="text"name="code"style="width: 50px"><br>
     <input type="button"onclick="history.back()"value="戻る">
-    <input type="submit"value="OK">
+    <input type="submit"value="次へ">
     </form>
     
     </body>    

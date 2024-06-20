@@ -62,7 +62,7 @@
         print'<input type="hidden"name="zaikosuu"value="'.$product_zaikosuu.'">';
         print'<br>';
         print'<input type="button"onclick="history.back()"value="戻る">';
-        print'<input type="submit"value="OK">';
+        print'<input type="submit"value="次へ">';
         print'</form>';
     }
     ?>

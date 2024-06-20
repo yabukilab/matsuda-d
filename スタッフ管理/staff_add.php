@@ -16,7 +16,7 @@
     もう一度パスワードを入力してください<br>
     <input type="text"name="pass2"style="width: 200px;"><br>
     <input type="button"onclick="history.back()"value="戻る">
-    <input type="submit"value="OK">
+    <input type="submit"value="次へ">
     </form>
     
     </body>    

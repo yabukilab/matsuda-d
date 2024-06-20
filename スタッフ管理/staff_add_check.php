@@ -52,7 +52,7 @@
         print'<input type="hidden"name="pass"value="'.$s_pass.'">';
         print'<br>';
         print'<input type="button"onclick="history.back()"value="戻る">';
-        print'<input type="submit"value="OK">';
+        print'<input type="submit"value="次へ">';
         print'</form>';
     }
     ?>

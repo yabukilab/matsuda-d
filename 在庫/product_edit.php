@@ -10,7 +10,8 @@
 商品修正<br>
 <br>
 商品コード<input type="text" name="code" style="width:20px"><br>
-<input type="submit" value="決定">
+<input type="button"onclick="history.back()"value="戻る">
+<input type="submit" value="次へ">
 </form>
 
 </body>    

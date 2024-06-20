@@ -63,7 +63,7 @@ catch(Exception $e)
 <input type="text" name="zaikosuu" style="width:50px" value="<?php print $p_zaikosuu; ?>"><br /><br >
 
 <input type="button" onclick="history.back()" value="戻る">
-<input type="submit" value="ＯＫ">
+<input type="submit" value="次へ">
 
 </form>
 

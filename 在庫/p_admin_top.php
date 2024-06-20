@@ -5,7 +5,12 @@
         <title>商品一覧</title>
     </head>
     <body>
-    
+    在庫管理<br>
+    <br>
+    <a href="product_add.php">商品追加</a>
+    <a href="product_delete.php">商品削除</a>
+    <a href="product_edit.php">商品編集</a><br>
+    <br>
 <?php
 $servername = "localhost";
 $username = "root";
@@ -42,5 +47,9 @@ if ($result->num_rows > 0) {
 // 接続解除
 $conn->close();
 ?>
+    <br>
+    <a href="admin_top.php">管理者top</a>
+    <a href="s_admin_top.php">スタッフ管理</a>
+    <a href="product_buy.php">注文確認</a>
     </body>    
     </html>    

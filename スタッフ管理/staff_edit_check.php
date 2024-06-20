@@ -59,7 +59,7 @@ catch(Exception $e)
 <input type="text" name="pass" style="width:50px" value="<?php print $s_pass; ?>"><br /><br >
 
 <input type="button" onclick="history.back()" value="戻る">
-<input type="submit" value="ＯＫ">
+<input type="submit" value="次へ">
 
 </form>
 

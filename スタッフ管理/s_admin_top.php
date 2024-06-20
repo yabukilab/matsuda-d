@@ -5,7 +5,12 @@
         <title>スタッフ一覧</title>
     </head>
     <body>
-    
+    スタッフ管理<br>
+    <br>
+    <a href="staff_add.php">スタッフ追加</a>
+    <a href="staff_delete.php">スタッフ削除</a>
+    <a href="staff_edit.php">スタッフ編集</a><br>
+    <br>
 <?php
 $servername = "localhost";
 $username = "root";
@@ -38,5 +43,9 @@ if ($result->num_rows > 0) {
 // 接続解除
 $conn->close();
 ?>
+<br>
+    <a href="admin_top.php">管理者top</a>
+    <a href="p_admin_top.php">在庫管理</a>
+    <a href="product_buy.php">注文確認</a>
     </body>    
     </html>    
