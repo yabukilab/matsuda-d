@@ -5,7 +5,7 @@
         <title>スタッフ追加確認</title>
     </head>
     <body>
-
+    <link rel="stylesheet" href="staff_add.css">
     <?php
 
     $s_name=$_POST['name'];

@@ -5,7 +5,7 @@
         <title>商品追加</title>
     </head>
     <body>
-    
+    <link rel="stylesheet" href="product_add.css">
     商品追加<br>
     <br>
     <form method="post"action="product_add_check.php">

@@ -5,7 +5,7 @@
         <title>商品追加完了</title>
     </head>
         <body>
-    
+        <link rel="stylesheet" href="product_add.css">
             <?php
 
             try

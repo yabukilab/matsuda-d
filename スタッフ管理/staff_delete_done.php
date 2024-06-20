@@ -5,7 +5,7 @@
         <title>スタッフ情報削除</title>
     </head>
     <body>
-   
+    <link rel="stylesheet" href="staff_delete.css">
     <?php
 
         require 'db(2).php';

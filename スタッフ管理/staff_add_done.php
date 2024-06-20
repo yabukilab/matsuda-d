@@ -5,7 +5,7 @@
         <title>スタッフ追加完了</title>
     </head>
         <body>
-    
+        <link rel="stylesheet" href="staff_add.css">
             <?php
 
             try

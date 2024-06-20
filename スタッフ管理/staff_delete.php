@@ -6,7 +6,7 @@
         </title>
     </head>
     <body>
-    
+    <link rel="stylesheet" href="staff_delete.css">
     スタッフ削除<br>
     <br>
     <form method="post"action="staff_delete_check.php">

@@ -7,6 +7,10 @@
 </head>
 
 <body>
+
+注文確認<br>
+<br>
+
 </body>
 
 </html>

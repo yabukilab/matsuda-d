@@ -5,7 +5,7 @@
         <title>スタッフ追加</title>
     </head>
     <body>
-    
+    <link rel="stylesheet" href="staff_add.css">
     スタッフ追加<br>
     <br>
     <form method="post"action="staff_add_check.php">

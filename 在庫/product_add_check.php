@@ -5,7 +5,7 @@
         <title>商品追加確認</title>
     </head>
     <body>
-
+    <link rel="stylesheet" href="product_add.css">
     <?php
 
     $product_name=$_POST['name'];

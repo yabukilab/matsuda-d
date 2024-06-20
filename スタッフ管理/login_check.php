@@ -5,7 +5,7 @@
         <title>ログイン確認</title>
     </head>
     <body>
-    
+    <link rel="stylesheet" href="login.css">
 <?php
 
 try

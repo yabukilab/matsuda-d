@@ -5,7 +5,7 @@
         <title>スタッフ情報削除確認</title>
     </head>
     <body>
-
+    <link rel="stylesheet" href="staff_delete.css">
     <?php
 
     $s_code=$_POST['code'];
