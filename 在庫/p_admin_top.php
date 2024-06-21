@@ -38,7 +38,6 @@ if ($result->num_rows > 0) {
          " 商品名: " . $row["name"] .
          "値段: " . $row["price"] .
          "在庫数: " . $row["zaikosuu"] .
-
          "<br>";
     }
 } else {

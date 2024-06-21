@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="product_add.css">
     商品追加<br>
     <br>
-    <form method="post"action="product_add_check.php">
+    <form method="post"action="product_add_check.php"enctype="multipart/form-data">
     商品名を入力してください。<br>
     <input type="text"name="name"style="width: 200px"><br>
-    価格を入力してください<br>
+    価格を入力してください。<br>
     <input type="text"name="price"style="width: 50px"><br>
-    在庫数を入力してください<br>
+    在庫数を入力してください。<br>
     <input type="text"name="zaikosuu"style="width: 50px"><br>
+    画像を選択してください。<br>
+    <input type="file" name="gazou" style="width: 400px;"><br>
+    <br>
     <input type="button"onclick="history.back()"value="戻る">
     <input type="submit"value="次へ">
     </form>

@@ -12,6 +12,7 @@
 			$p_name=$_POST['name'];
 			$p_price=$_POST['price'];
 			$p_zaikosuu=$_POST['zaikosuu'];
+			$p_gazou=$_POST['gazou'];
 
 			try
 			{
@@ -19,13 +20,13 @@
 				$db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 				$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-				$sql='UPDATE 在庫管理 SET name=:name,price=:price,zaikosuu=:zaikosuu WHERE code=:code';
+				$sql='UPDATE 在庫管理 SET name=:name,price=:price,zaikosuu=:zaikosuu,gazou=:gazou WHERE code=:code';
 				$stmt=$db->prepare($sql);
 				$stmt->bindValue(':name', $p_name, PDO::PARAM_STR);
 				$stmt->bindValue(':price', $p_price, PDO::PARAM_INT);
 				$stmt->bindValue(':code', $p_code, PDO::PARAM_INT);
 				$stmt->bindValue(':zaikosuu', $p_zaikosuu, PDO::PARAM_INT);
-				$stmt->execute();
+				$stmt->bindValue(':gazou', $p_gazou, PDO::PARAM_STR);
 
 				$db=null;
 

@@ -35,6 +35,7 @@ try
     $p_name = $rec['name'];
     $p_price = $rec['price'];
     $p_zaikosuu=$rec['zaikosuu'];
+    $p_gazou=$rec['gazou'];
 
 }
 catch(Exception $e)
@@ -60,8 +61,10 @@ catch(Exception $e)
 <input type="text" name="price" style="width:50px" value="<?php print $p_price; ?>"><br />
 
 在庫数<br />
-<input type="text" name="zaikosuu" style="width:50px" value="<?php print $p_zaikosuu; ?>"><br /><br >
+<input type="text" name="zaikosuu" style="width:50px" value="<?php print $p_zaikosuu; ?>"><br />
 
+商品画像<br>
+<input type="file" name="gazou" style="width: 400px" value="<?php print $p_gazou; ?>"><br><br>
 <input type="button" onclick="history.back()" value="戻る">
 <input type="submit" value="次へ">
 
