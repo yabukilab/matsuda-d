@@ -20,12 +20,6 @@
     {
         print'スタッフ名が入力されていません。<br>';
     }
-    else
-    {
-        print'スタッフ名:';
-        print$s_name;
-        print'<br>';
-    }
 
     if($s_pass=='')
     {
@@ -37,7 +31,7 @@
         print'パスワードが一致しません。';
     }
 
-    if($s_name==''||$s_pass==''||$s_pass2=='')
+    if($s_name==''||$s_pass==''||$s_pass2==''||$s_pass!=$s_pass2)
     {
         print'<form>';
         print'<input type="button"onclick="history.back()"value="戻る">';
