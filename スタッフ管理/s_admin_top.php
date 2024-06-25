@@ -34,7 +34,8 @@ $result = $conn->query($sql);
 // データを表示
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
-        echo " スタッフコード: " . $row["code"] . " 名前: " . $row["name"] ."<br>";
+        print'<a href = "staff_disp.php?procode='. $row['code'].'">';
+        echo " コード: " . $row["code"] . " 名前: " . $row["name"] ."<br>";
     }
 } else {
     echo "0 results";
@@ -43,9 +44,13 @@ if ($result->num_rows > 0) {
 // 接続解除
 $conn->close();
 ?>
+
+<input type="hidden" name="code" value="<?php print $s_code; ?>"><br />
+
 <br>
     <a href="admin_top.php">管理者top</a>
     <a href="p_admin_top.php">在庫管理</a>
     <a href="product_buy.php">注文確認</a>
     </body>    
+    
     </html>    
