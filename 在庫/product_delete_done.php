@@ -5,7 +5,7 @@
         <title>商品削除</title>
     </head>
     <body>
-    <link rel="stylesheet" href="product_delete.css">
+   
     <?php
 
         require 'db(1).php';
@@ -34,7 +34,7 @@
 			}
 
 		?>
-		<a href="p_admin_top.php">戻る</a>
+		<a href="admin_top.php">戻る</a>
 
     </body>
 </html>
