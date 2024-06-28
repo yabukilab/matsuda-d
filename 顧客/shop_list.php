@@ -7,7 +7,7 @@ session_regenerate_id(true);
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ろくまる農園</title>
+<title>商品一覧</title>
 </head>
 <body>
 

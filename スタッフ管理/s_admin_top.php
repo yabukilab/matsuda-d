@@ -34,7 +34,6 @@ $result = $conn->query($sql);
 // データを表示
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
-        print'<a href = "staff_disp.php?procode='. $row['code'].'">';
         echo " コード: " . $row["code"] . " 名前: " . $row["name"] ."<br>";
     }
 } else {

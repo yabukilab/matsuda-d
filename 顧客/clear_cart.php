@@ -12,7 +12,7 @@ session_destroy();
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ろくまる農園</title>
+<title>カート内商品削除</title>
 </head>
 <body>
 
