@@ -11,6 +11,8 @@ session_regenerate_id(true);
 </head>
 <body>
 
+<a href="login.php">スタッフの方はこちら</a>
+
 <?php
 
 try
@@ -55,6 +57,6 @@ catch (Exception $e)
 }
 
 ?>
-
+<a href="login.php">スタッフの方はこちら</a>
 </body>
 </html>
