@@ -57,6 +57,6 @@ catch (Exception $e)
 }
 
 ?>
-<a href="login.php">スタッフの方はこちら</a>
+<a href="login.php">スタッフの方はこちら<br></a>
 </body>
 </html>
