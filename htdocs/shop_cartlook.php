@@ -40,7 +40,7 @@ require 'db.php';
 foreach($cart as $key=>$val)
 {
 	$sql='SELECT code,name,price,gazou FROM 在庫管理 WHERE code=?';
-	$stmt=$dbh->prepare($sql);
+	$stmt=$db->prepare($sql);
 	$data[0]=$val;
 	$stmt->execute($data);
 

@@ -21,7 +21,7 @@ $pro_code=$_GET['procode'];
 require 'db.php';
 
 $sql='SELECT name,price,gazou FROM 在庫管理 WHERE code=?';
-$stmt=$dbh->prepare($sql);
+$stmt=$db->prepare($sql);
 $data[]=$pro_code;
 $stmt->execute($data);
 

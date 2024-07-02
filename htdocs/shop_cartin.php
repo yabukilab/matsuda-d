@@ -45,7 +45,7 @@ catch(Exception $e)
 
 カートに追加しました。<br />
 <br />
-<a href="shop_list.php">商品一覧に戻る</a>
+<a href="index.php">商品一覧に戻る</a>
 
 </body>
 </html>
