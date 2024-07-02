@@ -17,6 +17,7 @@ session_destroy();
 <body>
 
 カートを空にしました。<br />
+<a href="shop_cartlook.php">戻る</a>
 
 </body>
 </html>

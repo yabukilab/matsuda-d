@@ -50,6 +50,5 @@ try
     <br>
     <a href="admin_top.php">管理者top</a>
     <a href="s_admin_top.php">スタッフ管理</a>
-    <a href="product_buy.php">注文確認</a>
     </body>    
     </html>    

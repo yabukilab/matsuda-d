@@ -31,7 +31,7 @@ if($max==0)
 {
 	print 'カートに商品が入っていません。<br />';
 	print '<br />';
-	print '<a href="shop_list.php">商品一覧へ戻る</a>';
+	print '<a href="index.php">商品一覧へ戻る</a>';
 	exit();
 }
 
@@ -100,6 +100,7 @@ catch(Exception $e)
 <input type="button" onclick="history.back()" value="戻る">
 </form>
 <br />
+<a href="clear_cart.php">カートを空にする</a><br>
 <a href="shop_form.html">ご購入手続きへ進む</a><br />
 
 </body>

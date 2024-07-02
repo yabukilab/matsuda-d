@@ -15,23 +15,35 @@
 
 require 'db.php';
 
-// データを取得するSQLクエリ
-$sql = "SELECT * FROM 管理者情報管理";
+try
+			{
+				$db = new PDO($dsn, $dbUser, $dbPass);
+				$db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+				$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-// SQL実行
-$result = $conn->query($sql);
+				$sql='SELECT * FROM 管理者情報管理';
+				$stmt=$db->prepare($sql);
+				$stmt->execute();
 
-// データを表示
-if ($result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-        echo " コード: " . $row["code"] . " 名前: " . $row["name"] ."<br>";
-    }
-} else {
-    echo "0 results";
-}
+				$db=null;
 
-// 接続解除
-$conn->close();
+				print 'スタッフ一覧<br /><br />';
+
+				$count = $stmt -> rowCount();
+				for ($i = 0; $i < $count; $i++)
+				{
+					$rec=$stmt->fetch(PDO::FETCH_ASSOC);
+					print h($rec['code']).' ';
+					print h($rec['name']).' ';
+					print '<br />';
+				}
+
+			}
+			catch (Exception $e)
+			{
+				echo 'エラーが発生しました。内容: ' . h($e->getMessage());
+	 			exit();
+			}
 ?>
 
 <input type="hidden" name="code" value="<?php print $s_code; ?>"><br />
@@ -39,7 +51,6 @@ $conn->close();
 <br>
     <a href="admin_top.php">管理者top</a>
     <a href="p_admin_top.php">在庫管理</a>
-    <a href="product_buy.php">注文確認</a>
     </body>    
     
     </html>    
