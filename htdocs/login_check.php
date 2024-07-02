@@ -27,7 +27,7 @@ $data[]=$s_code;
 $data[]=$s_pass;
 $stmt->execute($data);
 
-$dbh=null;
+$db=null;
 
 $rec=$stmt->fetch(PDO::FETCH_ASSOC);
 

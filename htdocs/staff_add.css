@@ -8,6 +8,17 @@ body {
     align-items: center;
 }
 
+head {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* ヘッダーを他の要素の上に表示するための設定 */
+}
+
 h1 {
     font-size: 24px;
     text-align: center;
@@ -52,15 +63,15 @@ form input[type="submit"]:hover {
 }
 
 form input[type="button"] {
-    background-color: #f44336;
+    background-color: #0066cc;
 }
 
 form input[type="button"]:hover {
-    background-color: #e53935;
+    background-color: #0066cc;;
 }
 
 form input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #0066cc;;
 }
 
 label {

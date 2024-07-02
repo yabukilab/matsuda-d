@@ -33,7 +33,6 @@ try
     }
 
     $s_name = $rec['name'];
-    $s_pass = $rec['pass'];
 
 }
 catch(Exception $e)
@@ -54,9 +53,6 @@ catch(Exception $e)
 
 スタッフ名<br />
 <input type="text" name="name" style="width:200px" value="<?php print $s_name; ?>"><br />
-
-パスワード<br />
-<input type="text" name="pass" style="width:50px" value="<?php print $s_pass; ?>"><br /><br >
 
 <input type="button" onclick="history.back()" value="戻る">
 <input type="submit" value="次へ">

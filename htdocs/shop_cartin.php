@@ -26,7 +26,7 @@ if(isset($_SESSION['cart'])==true)
 	{
 		print 'その商品はすでにカートに入っています。<br />';
 		print '<a href="index.php">商品一覧に戻る</a><br>';
-		print '<a href="shop_cartlook.php">カートを見る</a><br />';
+		print'<a href="shop_cartlook.php">カートを見る</a><br>';
 
 		exit();
 	}
@@ -48,7 +48,7 @@ catch(Exception $e)
 カートに追加しました。<br />
 <br />
 <a href="index.php">商品一覧に戻る</a><br>
-print '<a href="shop_cartlook.php">カートを見る</a><br />';
+<a href="shop_cartlook.php">カートを見る</a><br />
 
 
 </body>
