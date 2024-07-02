@@ -18,14 +18,10 @@ session_regenerate_id(true);
 try
 {
 
-$dsn='mysql:dbname=在庫system;host=localhost;charset=utf8';
-$user='root';
-$password='';
-$dbh=new PDO($dsn,$user,$password);
-$dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+require 'db.php';
 
 $sql='SELECT code,name,price FROM 在庫管理 WHERE 1';
-$stmt=$dbh->prepare($sql);
+$stmt=$db->prepare($sql);
 $stmt->execute();
 
 $dbh=null;

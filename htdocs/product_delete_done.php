@@ -8,7 +8,7 @@
    
     <?php
 
-        require 'db(1).php';
+        require 'db.php';
 
         $p_code=$_POST['code'];
 

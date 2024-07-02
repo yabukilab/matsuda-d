@@ -8,7 +8,7 @@
     
     <?php
 
-require_once 'db(2).php';
+require_once 'db.php';
 
 $s_code=$_GET['code'];
 

@@ -19,14 +19,10 @@ $s_pass=htmlspecialchars($s_pass,ENT_QUOTES,'UTF-8');
 
 $s_pass=md5($s_pass);
 
-$dsn='mysql:dbname=在庫system;host=localhost;charset=utf8';
-$user='root';
-$password='';
-$dbh=new PDO($dsn,$user,$password);
-$dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+require 'db.php';
 
 $sql='SELECT name FROM 管理者情報管理 WHERE code=? AND pass=?';
-$stmt=$dbh->prepare($sql);
+$stmt=$db->prepare($sql);
 $data[]=$s_code;
 $data[]=$s_pass;
 $stmt->execute($data);

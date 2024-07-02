@@ -7,7 +7,7 @@
 	<body>
 		<?php
 
-			require 'db(1).php';
+			require 'db.php';
 			$p_code=$_POST['code'];
 			$p_name=$_POST['name'];
 			$p_price=$_POST['price'];

@@ -11,7 +11,7 @@
             try
             {
 
-            require 'db(2).php'; 
+            require 'db.php'; 
 
             $s_name=$_POST['name'];
             $s_pass=$_POST['pass'];

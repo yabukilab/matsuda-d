@@ -7,7 +7,7 @@
 	<body>
 		<?php
 
-			require 'db(2).php';
+			require 'db.php';
 			$s_code=$_POST['code'];
 			$s_name=$_POST['name'];
 			$s_pass=$_POST['pass'];

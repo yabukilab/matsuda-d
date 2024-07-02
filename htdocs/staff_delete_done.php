@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="staff_delete.css">
     <?php
 
-        require 'db(2).php';
+        require 'db.php';
 
         $s_code=$_POST['code'];
 

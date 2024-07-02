@@ -12,40 +12,40 @@
     <a href="product_edit.php">商品編集</a><br>
     <br>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "在庫system";
 
-// データベースに接続
-$conn = new mysqli($servername, $username, $password, $dbname);
+require 'db.php';
 
-// 接続エラーチェック
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+try
+			{
+				$db = new PDO($dsn, $dbUser, $dbPass);
+				$db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+				$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-// データを取得するSQLクエリ
-$sql = "SELECT * FROM 在庫管理";
+				$sql='SELECT * FROM 在庫管理';
+				$stmt=$db->prepare($sql);
+				$stmt->execute();
 
-// SQL実行
-$result = $conn->query($sql);
+				$db=null;
 
-// データを表示
-if ($result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-        echo "商品コード: " . $row["code"] .
-         " 商品名: " . $row["name"] .
-         "値段: " . $row["price"] .
-         "在庫数: " . $row["zaikosuu"] .
-         "<br>";
-    }
-} else {
-    echo "0 results";
-}
+				print '商品一覧<br /><br />';
 
-// 接続解除
-$conn->close();
+				$count = $stmt -> rowCount();
+				for ($i = 0; $i < $count; $i++)
+				{
+					$rec=$stmt->fetch(PDO::FETCH_ASSOC);
+					print h($rec['code']).' ';
+					print h($rec['name']).' ';
+					print h($rec['price']);
+                    print'円';
+					print '<br />';
+				}
+
+			}
+			catch (Exception $e)
+			{
+				echo 'エラーが発生しました。内容: ' . h($e->getMessage());
+	 			exit();
+			}
 ?>
     <br>
     <a href="admin_top.php">管理者top</a>

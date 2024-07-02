@@ -12,18 +12,8 @@
     <a href="staff_edit.php">スタッフ編集</a><br>
     <br>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "在庫system";
 
-// データベースに接続
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// 接続エラーチェック
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+require 'db.php';
 
 // データを取得するSQLクエリ
 $sql = "SELECT * FROM 管理者情報管理";

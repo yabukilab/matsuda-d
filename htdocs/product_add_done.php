@@ -11,7 +11,7 @@
             try
             {
 
-            require 'db(1).php'; 
+            require 'db.php'; 
 
             $product_name=$_POST['name'];
             $product_price=$_POST['price'];

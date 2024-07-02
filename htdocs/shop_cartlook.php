@@ -35,11 +35,7 @@ if($max==0)
 	exit();
 }
 
-$dsn='mysql:dbname=在庫system;host=localhost;charset=utf8';
-$user='root';
-$password='';
-$dbh=new PDO($dsn,$user,$password);
-$dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+require 'db.php';
 
 foreach($cart as $key=>$val)
 {

@@ -18,11 +18,7 @@ try
 
 $pro_code=$_GET['procode'];
 
-$dsn='mysql:dbname=在庫system;host=localhost;charset=utf8';
-$user='root';
-$password='';
-$dbh=new PDO($dsn,$user,$password);
-$dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+require 'db.php';
 
 $sql='SELECT name,price,gazou FROM 在庫管理 WHERE code=?';
 $stmt=$dbh->prepare($sql);

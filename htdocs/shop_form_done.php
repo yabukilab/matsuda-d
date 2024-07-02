@@ -33,7 +33,7 @@ $cart=$_SESSION['cart'];
 $kazu=$_SESSION['kazu'];
 $max=count($cart);
 
-require 'db(2).php';
+require 'db.php';
 
 for($i=0;$i<$max;$i++)
 {
