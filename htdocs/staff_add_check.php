@@ -5,7 +5,12 @@
         <title>スタッフ追加確認</title>
     </head>
     <body>
-    <link rel="stylesheet" href="staff_add.css">
+    <link rel="stylesheet" href="login.css">
+    <div class="header">
+    <h1>在庫管理システム</h1>
+    </div>
+    <div class="login-form">
+        <h2>スタッフ追加確認</h2>
     <?php
 
     $s_name=$_POST['name'];
@@ -45,11 +50,14 @@
         print'<input type="hidden"name="name"value="'.$s_name.'">';
         print'<input type="hidden"name="pass"value="'.$s_pass.'">';
         print'<br>';
+        print'スタッフ名:';
+        print $s_name;
         print'<input type="button"onclick="history.back()"value="戻る">';
         print'<input type="submit"value="次へ">';
         print'</form>';
     }
     ?>
 
+    </div>
     </body>    
 </html>    

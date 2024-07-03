@@ -5,7 +5,12 @@
         <title>スタッフ追加完了</title>
     </head>
         <body>
-        <link rel="stylesheet" href="staff_add.css">
+        <link rel="stylesheet" href="login.css">
+        <div class="header">
+        <h1>在庫管理システム</h1>
+        </div>
+        <div class="login-form">
+        <h2>スタッフ追加確認</h2>
             <?php
 
             try
@@ -35,6 +40,6 @@
             ?>
 
             <a href="s_admin_top.php">戻る</a>
-
+            </div>
         </body>    
 </html>    
