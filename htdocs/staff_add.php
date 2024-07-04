@@ -5,7 +5,7 @@
         <title>スタッフ追加</title>
     </head>
     <body>
-        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="staff_add.css">
         <div class="header">
             <h1>在庫管理システム<br></h1>
         </div>

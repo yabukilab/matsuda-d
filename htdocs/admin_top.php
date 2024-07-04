@@ -13,5 +13,5 @@
     <a href="s_admin_top.php">スタッフ管理</a>
     <br>
     <a href="product_buy.php">注文確認</a>
-    </body>    
+    </body>
 </html>    
