@@ -25,6 +25,7 @@ print'a';
 print'a';
             $prepare->bindValue(':s_name', $s_name, PDO::PARAM_STR); # 埋め込み1
             $prepare->bindValue(':s_pass', $s_pass, PDO::PARAM_STR); # 埋め込み2
+print'a';
             $prepare->execute(); # 実行
             $dbh=null;
 print'a';
