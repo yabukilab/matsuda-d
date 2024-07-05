@@ -17,8 +17,6 @@ $s_pass=$_POST['pass'];
 $s_code=htmlspecialchars($s_code,ENT_QUOTES,'UTF-8');
 $s_pass=htmlspecialchars($s_pass,ENT_QUOTES,'UTF-8');
 
-$s_pass=md5($s_pass);
-
 require 'db.php';
 
 $sql='SELECT name FROM 管理者情報管理 WHERE code=? AND pass=?';
