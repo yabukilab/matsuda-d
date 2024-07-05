@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- ホスト: 127.0.0.1
--- 生成日時: 2024-07-05 09:22:11
+-- 生成日時: 2024-07-05 09:38:05
 -- サーバのバージョン： 10.4.32-MariaDB
 -- PHP のバージョン: 8.2.12
 
@@ -144,96 +144,6 @@ INSERT INTO `dat_sales_product` (`code`, `code_sales`, `code_product`, `price`, 
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `mytable`
---
-
-CREATE TABLE `mytable` (
-  `id` int(11) NOT NULL,
-  `foo` varchar(100) DEFAULT NULL,
-  `bar` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- テーブルのデータのダンプ `mytable`
---
-
-INSERT INTO `mytable` (`id`, `foo`, `bar`) VALUES
-(2, 'い', -200),
-(3, 'う', 300),
-(5, 'い', -200),
-(6, 'う', 300),
-(8, 'い', -200),
-(9, 'う', 300),
-(11, 'い', -200),
-(12, 'う', 300),
-(14, 'い', -200),
-(15, 'う', 300),
-(17, 'い', -200),
-(18, 'う', 300),
-(20, 'い', -200),
-(21, 'う', 300),
-(23, 'い', -200),
-(24, 'う', 300),
-(26, 'い', -200),
-(27, 'う', 300),
-(29, 'い', -200),
-(30, 'う', 300);
-
--- --------------------------------------------------------
-
---
--- テーブルの構造 `productinfo`
---
-
-CREATE TABLE `productinfo` (
-  `id` int(11) NOT NULL,
-  `productname` varchar(30) NOT NULL,
-  `price` int(11) NOT NULL,
-  `stock` int(11) NOT NULL,
-  `imgfile` varchar(40) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- テーブルのデータのダンプ `productinfo`
---
-
-INSERT INTO `productinfo` (`id`, `productname`, `price`, `stock`, `imgfile`) VALUES
-(1, 'イヤホン', 1500, 100, 'product6.img'),
-(2, 'モバイルバッテリ', 3980, 10, 'product7.img'),
-(3, 'USB-TypeC接続ケーブル', 800, 50, NULL);
-
--- --------------------------------------------------------
-
---
--- テーブルの構造 `table1`
---
-
-CREATE TABLE `table1` (
-  `id` int(11) NOT NULL,
-  `product` varchar(40) NOT NULL,
-  `cost` int(11) NOT NULL,
-  `stock` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- テーブルのデータのダンプ `table1`
---
-
-INSERT INTO `table1` (`id`, `product`, `cost`, `stock`) VALUES
-(1, 'A', 1280, 1),
-(2, 'B', 2980, 0),
-(3, 'C', 198, 3),
-(4, 'D', 3980, 5),
-(5, 'E', 990, 121),
-(6, 'F', 1500, 100),
-(7, 'G', 1980, 52),
-(8, 'H', 256, 22),
-(9, 'I', 512, 27),
-(10, 'J', 3333, 4);
-
--- --------------------------------------------------------
-
---
 -- テーブルの構造 `在庫管理`
 --
 
@@ -295,19 +205,8 @@ INSERT INTO `管理者情報管理` (`code`, `name`, `pass`) VALUES
 (30, 'a', 0),
 (31, 'a', 0),
 (32, 'a', 0),
-(33, 'a', 0);
-
--- --------------------------------------------------------
-
---
--- テーブルの構造 `顧客情報管理`
---
-
-CREATE TABLE `顧客情報管理` (
-  `code` int(11) NOT NULL,
-  `name` varchar(30) NOT NULL,
-  `number` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+(33, 'a', 0),
+(34, 'a', 1);
 
 --
 -- ダンプしたテーブルのインデックス
@@ -326,24 +225,6 @@ ALTER TABLE `dat_sales_product`
   ADD PRIMARY KEY (`code`);
 
 --
--- テーブルのインデックス `mytable`
---
-ALTER TABLE `mytable`
-  ADD PRIMARY KEY (`id`);
-
---
--- テーブルのインデックス `productinfo`
---
-ALTER TABLE `productinfo`
-  ADD PRIMARY KEY (`id`);
-
---
--- テーブルのインデックス `table1`
---
-ALTER TABLE `table1`
-  ADD PRIMARY KEY (`id`);
-
---
 -- テーブルのインデックス `在庫管理`
 --
 ALTER TABLE `在庫管理`
@@ -353,12 +234,6 @@ ALTER TABLE `在庫管理`
 -- テーブルのインデックス `管理者情報管理`
 --
 ALTER TABLE `管理者情報管理`
-  ADD PRIMARY KEY (`code`);
-
---
--- テーブルのインデックス `顧客情報管理`
---
-ALTER TABLE `顧客情報管理`
   ADD PRIMARY KEY (`code`);
 
 --
@@ -378,24 +253,6 @@ ALTER TABLE `dat_sales_product`
   MODIFY `code` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
--- テーブルの AUTO_INCREMENT `mytable`
---
-ALTER TABLE `mytable`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
-
---
--- テーブルの AUTO_INCREMENT `productinfo`
---
-ALTER TABLE `productinfo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- テーブルの AUTO_INCREMENT `table1`
---
-ALTER TABLE `table1`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
---
 -- テーブルの AUTO_INCREMENT `在庫管理`
 --
 ALTER TABLE `在庫管理`
@@ -405,13 +262,7 @@ ALTER TABLE `在庫管理`
 -- テーブルの AUTO_INCREMENT `管理者情報管理`
 --
 ALTER TABLE `管理者情報管理`
-  MODIFY `code` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
-
---
--- テーブルの AUTO_INCREMENT `顧客情報管理`
---
-ALTER TABLE `顧客情報管理`
-  MODIFY `code` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `code` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
