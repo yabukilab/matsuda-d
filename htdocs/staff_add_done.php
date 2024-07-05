@@ -22,6 +22,7 @@ print'a';
             $s_pass=$_POST['pass'];
             $sql='insert into 管理者情報管理 (name,pass) values(:s_name,:s_pass)';                    # SQL文
             $prepare = $db->prepare($sql); # 準備
+print'a';
             $prepare->bindValue(':s_name', $s_name, PDO::PARAM_STR); # 埋め込み1
             $prepare->bindValue(':s_pass', $s_pass, PDO::PARAM_STR); # 埋め込み2
             $prepare->execute(); # 実行
