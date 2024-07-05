@@ -45,7 +45,6 @@
     else
     {
         
-        $s_pass=md5($s_pass);
         print'<form method="post"action="staff_add_done.php">';
         print'<input type="hidden"name="name"value="'.$s_name.'">';
         print'<input type="hidden"name="pass"value="'.$s_pass.'">';
