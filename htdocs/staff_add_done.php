@@ -17,7 +17,7 @@
             {
 
                 require 'db.php'; 
-
+print'a';
             $s_name=$_POST['name'];
             $s_pass=$_POST['pass'];
             $sql='insert into 管理者情報管理 (name,pass) values(:s_name,:s_pass)';                    # SQL文
