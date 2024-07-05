@@ -19,7 +19,8 @@
         <label for="pass">パスワード</label>
         <input type="password" id="pass" name="pass" required><br><br>
 
-        <input type="submit" value="ログイン">
+        <input type="submit" value="ログイン"><br>
+        <input type="button"onclick="history.back()"value="戻る"><br>
     </form>
 </div>
 
