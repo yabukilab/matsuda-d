@@ -30,7 +30,7 @@
             
             ?>
 
-            <a href="login.php">戻る</a>
+            <a href="s_admin_top.php">戻る</a>
             </div>
         </body>    
 </html>    

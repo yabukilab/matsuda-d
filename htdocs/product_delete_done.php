@@ -34,7 +34,7 @@
 			}
 
 		?>
-		<a href="admin_top.php">戻る</a>
+		<a href="p_admin_top.php">戻る</a>
 
     </body>
 </html>

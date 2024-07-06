@@ -19,7 +19,7 @@ $s_pass=htmlspecialchars($s_pass,ENT_QUOTES,'UTF-8');
 
 require 'db.php';
 
-$sql='SELECT name FROM 管理者情報管理 WHERE code=? AND pass=?';
+$sql='SELECT name FROM 管理者情報管理 WHERE name=? AND pass=?';
 $stmt=$db->prepare($sql);
 $data[]=$s_code;
 $data[]=$s_pass;

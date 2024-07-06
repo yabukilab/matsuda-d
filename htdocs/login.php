@@ -20,7 +20,6 @@
         <input type="password" id="pass" name="pass" required><br><br>
         <input type="submit" value="ログイン"><br>
         <input type="button"onclick="history.back()"value="戻る"><br>
-        <a href="staff_add.php">新規登録</a><br>
     </form>
 </div>
 
