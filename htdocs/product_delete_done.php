@@ -5,7 +5,7 @@
         <title>商品削除</title>
     </head>
     <body>
-   
+    <link rel="stylesheet" href="product_delete.css">
     <?php
 
         require 'db.php';

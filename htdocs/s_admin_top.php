@@ -5,6 +5,7 @@
         <title>スタッフ一覧</title>
     </head>
     <body>
+	<link rel="stylesheet" href="s_admin_top.css">
     スタッフ管理<br>
     <br>
     <a href="staff_add.php">スタッフ追加</a>

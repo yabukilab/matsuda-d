@@ -4,7 +4,9 @@
 		<meta charset="UTF-8">
 		<title>DB登録</title>
 	</head>
-	<body>
+	<body>    
+		<link rel="stylesheet" href="product_edit.css">
+
 		<?php
 
 			require 'db.php';

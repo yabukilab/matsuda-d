@@ -5,6 +5,7 @@
 		<title>DB登録</title>
 	</head>
 	<body>
+	<link rel="stylesheet" href="staff_edit.css">
 		<?php
 
 			require 'db.php';

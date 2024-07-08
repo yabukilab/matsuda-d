@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    background-color: #ffffff; /* 背景色を白に設定 */
+    text-align: center;
+    padding: 20px 0; /* 高さを調整 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 100; /* ヘッダーを他の要素の上に表示するための設定 */
+    font-size: 24px; /* フォントサイズを調整 */
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 70px; /* ヘッダーの下にリンクが来るようにマージンを追加 */
+}
+
+.links a {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.links a:hover {
+    background-color: #0052a3;
+}

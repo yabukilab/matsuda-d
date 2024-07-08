@@ -24,7 +24,7 @@ $sql='SELECT
 	dat_sales.address,
 	dat_sales.tel,
 	dat_sales_product.code_product,
-	在庫管理.name AS product_name,
+	在庫管理.name AS 在庫管理_name,
 	dat_sales_product.price,
 	dat_sales_product.quantity
 FROM
@@ -45,7 +45,7 @@ $stmt->execute($data);
 
 $db=null;
 
-$csv='注文コード,注文日時,会員番号,お名前,メール,郵便番号,住所,TEL,商品コード,商品名,価格,数量';
+$csv='注文コード,注文日時,お名前,メール,郵便番号,住所,TEL,商品コード,商品名,価格,数量';
 $csv.="\n";
 while(true)
 {
@@ -56,9 +56,7 @@ while(true)
 	}
 	$csv.=$rec['code'];
 	$csv.=',';
-	$csv.=$rec['date'];
-	$csv.=',';
-	$csv.=$rec['code_member'];
+	$csv.=$rec['data'];
 	$csv.=',';
 	$csv.=$rec['dat_sales_name'];
 	$csv.=',';
@@ -72,7 +70,7 @@ while(true)
 	$csv.=',';
 	$csv.=$rec['code_product'];
 	$csv.=',';
-	$csv.=$rec['mst_product_name'];
+	$csv.=$rec['在庫管理_name'];
 	$csv.=',';
 	$csv.=$rec['price'];
 	$csv.=',';

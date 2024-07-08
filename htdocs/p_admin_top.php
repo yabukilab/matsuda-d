@@ -5,6 +5,7 @@
         <title>商品一覧</title>
     </head>
     <body>
+	<link rel="stylesheet" href="p_admin_top.css">
     在庫管理<br>
     <br>
     <a href="product_add.php">商品追加</a>

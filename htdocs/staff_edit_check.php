@@ -5,7 +5,7 @@
         <title>スタッフ編集確認</title>
     </head>
     <body>
-    
+    <link rel="stylesheet" href="staff_edit.css">
     <?php
 
 require_once 'db.php';

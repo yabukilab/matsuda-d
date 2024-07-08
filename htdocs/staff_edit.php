@@ -5,7 +5,7 @@
         <title>スタッフ編集</title>
     </head>
     <body>
-
+    <link rel="stylesheet" href="staff_edit.css">
 <form method="get" action="staff_edit_check.php">
 スタッフ修正<br>
 <br>
