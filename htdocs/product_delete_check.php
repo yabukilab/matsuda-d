@@ -5,7 +5,7 @@
         <title>商品削除確認</title>
     </head>
     <body>
-    <link rel="stylesheet" href="product_delete.css">
+    <link rel="stylesheet" href="delete.css">
     <?php
 
     $p_code=$_POST['code'];

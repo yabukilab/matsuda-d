@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>スタッフ削除
-        </title>
-    </head>
-    <body>
-    <link rel="stylesheet" href="staff_delete.css">
-    スタッフ削除<br>
-    <br>
-    <form method="post"action="staff_delete_check.php">
-    スタッフコードを入力してください。<br>
-    <input type="text"name="code"style="width: 50px"><br>
-    <input type="button"onclick="history.back()"value="戻る">
-    <input type="submit"value="次へ">
-    </form>
-    
-    </body>    
-</html>    
+    <html lang="ja">
+        <head>
+            <meta charset="UTF-8">
+            <title>スタッフ削除</title>
+            <link rel="stylesheet" href="delete.css">
+        </head>
+        <body>
+            <div class="header">
+                <h1>在庫管理システム</h1>
+            </div>
+            <div class="delete-form">
+                    <h2>スタッフ削除</h2>
+                <form method="post"action="staff_delete_check.php">
+                    <label for="code">スタッフコードを入力してください。</label>
+                    <input type="text"id="code"name="code"required>
+                    <div class="form-actions">
+                        <input type="button"onclick="history.back()"value="戻る">
+                        <input type="submit"value="次へ">
+                    </div>
+                </form>
+            </div>
+        </body>    
+    </html>    

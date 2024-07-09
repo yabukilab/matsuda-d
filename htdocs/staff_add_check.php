@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
     <head>
         <meta charset="UTF-8">
         <title>スタッフ追加確認</title>
+        <link rel="stylesheet" href="add.css">
     </head>
     <body>
-    <link rel="stylesheet" href="staff_add.css">
     <div class="header">
     <h1>在庫管理システム</h1>
     </div>

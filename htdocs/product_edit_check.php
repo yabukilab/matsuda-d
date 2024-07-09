@@ -5,7 +5,7 @@
         <title>商品編集確認</title>
     </head>
     <body>
-    <link rel="stylesheet" href="product_edit.css">
+    <link rel="stylesheet" href="edit.css">
 
     <?php
 

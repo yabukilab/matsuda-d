@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="ja">
+<head>
         <meta charset="UTF-8">
         <title>スタッフ情報削除確認</title>
+        <link rel="stylesheet" href="delete.css">
     </head>
     <body>
-    <link rel="stylesheet" href="staff_delete.css">
+    <div class="header">
+        <h1>在庫管理システム</h1>
+    </div>
+    <div class="delete-form">
+    <h2>スタッフ情報削除確認</h2>
     <?php
 
     $s_code=$_POST['code'];
@@ -40,6 +45,6 @@
         print'</form>';
     }
     ?>
-
+    </div>
     </body>    
 </html>    

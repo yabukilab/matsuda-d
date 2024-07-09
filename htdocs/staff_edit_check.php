@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
     <head>
         <meta charset="UTF-8">
         <title>スタッフ編集確認</title>
+        <link rel="stylesheet" href="edit.css">
     </head>
     <body>
-    <link rel="stylesheet" href="staff_edit.css">
+    <div class="header">
+        在庫管理システム
+    </div>
+    <div class="edit-form">
     <?php
 
 require_once 'db.php';
@@ -43,7 +47,7 @@ catch(Exception $e)
 
 ?>
 
-スタッフ情報修正<br />
+スタッフ修正<br />
 <br />
 
 <form method="post" action="staff_edit_done.php">
@@ -59,6 +63,6 @@ catch(Exception $e)
 
 </form>
 
-
+</div>
     </body>    
 </html>    

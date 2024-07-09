@@ -6,7 +6,7 @@
         </title>
     </head>
     <body>
-    <link rel="stylesheet" href="product_delete.css">
+    <link rel="stylesheet" href="delete.css">
     商品削除<br>
     <br>
     <form method="post"action="product_delete_check.php">

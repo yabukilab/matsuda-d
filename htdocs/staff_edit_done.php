@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 	<head>
 		<meta charset="UTF-8">
 		<title>DB登録</title>
+		<link rel="stylesheet" href="edit.css">
 	</head>
 	<body>
-	<link rel="stylesheet" href="staff_edit.css">
+	<div class="header">
+        在庫管理システム
+    </div>
+    <div class="edit-form">
 		<?php
 
 			require 'db.php';
@@ -34,5 +38,6 @@
 
 		?>
 		<a href="s_admin_top.php">戻る</a>
+		</div>
 	</body>
 </html>

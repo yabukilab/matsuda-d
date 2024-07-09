@@ -5,7 +5,7 @@
         <title>商品追加</title>
     </head>
     <body>
-        <link rel="stylesheet" href="product_add.css">
+        <link rel="stylesheet" href="add.css">
         <div class="header">
             <h1>在庫管理システム<br></h1>
         </div>

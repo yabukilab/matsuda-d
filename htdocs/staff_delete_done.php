@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
     <head>
         <meta charset="UTF-8">
         <title>スタッフ情報削除</title>
+        <link rel="stylesheet" href="delete.css">
     </head>
     <body>
-    <link rel="stylesheet" href="staff_delete.css">
+    <div class="header">
+        <h1>在庫管理システム</h1>
+    </div>
+    <div class="delete-form">
+    <h2>スタッフ情報削除確認</h2>
     <?php
 
         require 'db.php';
@@ -35,6 +40,6 @@
 
 		?>
 		<a href="s_admin_top.php">戻る</a>
-
+</div>
     </body>
 </html>
