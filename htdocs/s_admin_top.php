@@ -60,6 +60,6 @@
 			<a href="p_admin_top.php">在庫管理</a>
 		</div>
 		</div>
-    </body>    
+    </body>
     
     </html>    

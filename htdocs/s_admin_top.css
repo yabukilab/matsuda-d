@@ -24,13 +24,14 @@ body {
 .container {
     margin-top: 120px; /* ヘッダーの下にコンテンツが来るようにマージンを追加 */
     width: 80%;
+    text-align: center;
 }
 
 .links {
     margin-bottom: 20px;
-    display: flex;
     justify-content: space-between;
     width: 100%;
+    text-align: center;
 }
 
 .links a {
@@ -52,19 +53,11 @@ body {
 
 .footer {
     margin-top: auto;
-    display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.footer a {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #0066cc;
-    color: #ffffff;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
+
 
 .footer a:hover {
     background-color: #0052a3;
