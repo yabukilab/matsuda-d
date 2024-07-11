@@ -191,6 +191,7 @@ CREATE TABLE `管理者情報管理` (
 -- テーブルのデータのダンプ `管理者情報管理`
 --
 
+drop table if exist 管理者情報管理;
 INSERT INTO `管理者情報管理` (`code`, `name`, `pass`) VALUES
 (27, 'a', 0),
 (30, 'a', 0),
