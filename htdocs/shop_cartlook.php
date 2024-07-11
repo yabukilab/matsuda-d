@@ -80,7 +80,6 @@ catch(Exception $e)
 <td>価格</td>
 <td>数量</td>
 <td>小計</td>
-<td>削除</td>
 </tr>
 <?php for($i=0;$i<$max;$i++)
 	{
@@ -90,7 +89,6 @@ catch(Exception $e)
 	<td><?php print $pro_price[$i]; ?>円</td>
 	<td><input type="text" name="kazu<?php print $i; ?>" value="<?php print $kazu[$i]; ?>"style="width:10px"s></td>
 	<td><?php print $pro_price[$i]*$kazu[$i]; ?>円</td>
-	<td><input type="checkbox" name="sakujo<?php print $i; ?>"></td>
 </tr>
 <?php
 	}

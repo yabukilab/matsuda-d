@@ -42,6 +42,7 @@
             exit();
             }
 
+            
             ?>
             <a href="p_admin_top.php"class=button>OK</a>
         </body>    
