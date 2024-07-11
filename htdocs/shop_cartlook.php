@@ -8,9 +8,14 @@ session_regenerate_id(true);
 <head>
 <meta charset="UTF-8">
 <title>カート確認</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div class="header">
+    <h1>いらっしゃいませ</h1>
+	</div>
+    <div class="form">
+        <h2>カート内商品</h2>
 <?php
 
 try
@@ -31,7 +36,7 @@ if($max==0)
 {
 	print 'カートに商品が入っていません。<br />';
 	print '<br />';
-	print '<a href="index.php">商品一覧へ戻る</a>';
+	print '<a href="index.php"class=tra>商品一覧へ戻る</a>';
 	exit();
 }
 
@@ -68,13 +73,10 @@ catch(Exception $e)
 
 ?>
 
-カートの中身<br />
-<br />
 <form method="post" action="kazu_change.php">
 <table border="1">
 <tr>
 <td>商品</td>
-<td>商品画像</td>
 <td>価格</td>
 <td>数量</td>
 <td>小計</td>
@@ -85,9 +87,8 @@ catch(Exception $e)
 ?>
 <tr>
 	<td><?php print $pro_name[$i]; ?></td>
-	<td><?php print $pro_gazou[$i]; ?></td>
 	<td><?php print $pro_price[$i]; ?>円</td>
-	<td><input type="text" name="kazu<?php print $i; ?>" value="<?php print $kazu[$i]; ?>"></td>
+	<td><input type="text" name="kazu<?php print $i; ?>" value="<?php print $kazu[$i]; ?>"style="width:10px"s></td>
 	<td><?php print $pro_price[$i]*$kazu[$i]; ?>円</td>
 	<td><input type="checkbox" name="sakujo<?php print $i; ?>"></td>
 </tr>
@@ -96,12 +97,16 @@ catch(Exception $e)
 ?>
 </table>
 <input type="hidden" name="max" value="<?php print $max; ?>">
-<input type="submit" value="数量変更"><br />
+<br>
+<div class="form-actions">
 <input type="button" onclick="history.back()" value="戻る">
+<input type="submit" value="数量変更">
+</div>
 </form>
 <br />
-<a href="clear_cart.php">カートを空にする</a><br>
-<a href="shop_form.html">ご購入手続きへ進む</a><br />
+
+<a href="clear_cart.php"class=cart>カートを空にする</a><br>
+<a href="shop_form.html"class=cart>ご購入手続きへ進む</a><br />
 
 </body>
 </html>

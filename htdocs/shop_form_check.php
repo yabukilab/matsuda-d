@@ -3,9 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <title>注文確認</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div class="header">
+    <h1>いらっしゃいませ</h1>
+	</div>
+    <div class="form">
+        <h2>商品詳細</h2>
 <?php
 
 require_once 'common.php';

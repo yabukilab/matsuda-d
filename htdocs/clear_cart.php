@@ -13,9 +13,14 @@ session_destroy();
 <head>
 <meta charset="UTF-8">
 <title>カート内商品削除</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div class="header">
+    <h1>いらっしゃいませ</h1>
+	</div>
+    <div class="form">
+        <h2>カート内商品</h2>
 カートを空にしました。<br />
 <a href="shop_cartlook.php">戻る</a>
 

@@ -8,9 +8,14 @@ session_regenerate_id(true);
 <head>
 <meta charset="UTF-8">
 <title>カート追加</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div class="header">
+    <h1>いらっしゃいませ</h1>
+	</div>
+    <div class="form">
+        <h2>カート追加</h2>
 <?php
 
 try
