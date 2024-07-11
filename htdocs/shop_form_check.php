@@ -103,8 +103,10 @@ if($okflg==true)
 	print '<input type="hidden" name="postal2" value="'.$postal2.'">';
 	print '<input type="hidden" name="address" value="'.$address.'">';
 	print '<input type="hidden" name="tel" value="'.$tel.'">';
+	print'<div class="form-actions">';
 	print '<input type="button" onclick="history.back()" value="戻る">';
 	print '<input type="submit" value="ＯＫ"><br />';
+	print'</div>';
 	print '</form>';
 }
 else
