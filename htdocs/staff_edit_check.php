@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>スタッフ編集確認</title>
-        <link rel="stylesheet" href="edit.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
     <div class="header">
-        在庫管理システム
+        <h1>在庫管理システム</h1>
     </div>
-    <div class="edit-form">
+    <div class="form">
     <?php
 
 require_once 'db.php';
@@ -47,19 +47,20 @@ catch(Exception $e)
 
 ?>
 
-スタッフ修正<br />
+<h2>スタッフ修正<br /></h2>
 <br />
 
 <form method="post" action="staff_edit_done.php">
 
-スタッフコード <?php print $s_code; ?><br />
+スタッフコード: <?php print $s_code; ?><br />
 <input type="hidden" name="code" value="<?php print $s_code; ?>"><br />
 
 スタッフ名<br />
 <input type="text" name="name" style="width:200px" value="<?php print $s_name; ?>"><br />
-
+<div class="form-actions">
 <input type="button" onclick="history.back()" value="戻る">
 <input type="submit" value="次へ">
+</div>
 
 </form>
 

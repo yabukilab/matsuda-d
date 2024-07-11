@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 	<head>
 		<meta charset="UTF-8">
 		<title>DB登録</title>
-	</head>
-	<body>    
-		<link rel="stylesheet" href="edit.css">
-
+		<link rel="stylesheet" href="style.css">
+	</head>   
+	<body>
+		<div class="header">
+        <h1>在庫管理システム<h1>
+    </div>
+    <div class="form">
 		<?php
 
 			require 'db.php';
@@ -31,7 +34,7 @@
 				$stmt->bindValue(':gazou', $p_gazou, PDO::PARAM_STR);
 
 				$db=null;
-
+				print'<h2>在庫情報修正<br /></h2>';
 				print '修正しました。<br />';
 
 			}
@@ -42,6 +45,7 @@
 			}
 
 		?>
-		<a href="p_admin_top.php">戻る</a>
+		<a href="p_admin_top.php"class=button>OK</a>
+		</div>
 	</body>
 </html>

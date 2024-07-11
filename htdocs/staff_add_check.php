@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>スタッフ追加確認</title>
-        <link rel="stylesheet" href="add.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
     <div class="header">
     <h1>在庫管理システム</h1>
     </div>
-    <div class="login-form">
-        <h2>スタッフ追加確認</h2>
+    <div class="form">
+        <h2>スタッフ追加</h2>
     <?php
 
     $s_name=$_POST['name'];
@@ -51,8 +51,11 @@
         print'<br>';
         print'スタッフ名:';
         print $s_name;
+        print'を追加します。<br><br>';
+        print'<div class="form-actions">';
         print'<input type="button"onclick="history.back()"value="戻る">';
         print'<input type="submit"value="次へ">';
+        print'</div>';
         print'</form>';
     }
     ?>

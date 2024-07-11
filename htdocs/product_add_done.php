@@ -3,10 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <title>商品追加完了</title>
+        <link rel="stylesheet" href="style.css">
     </head>
         <body>
-        <link rel="stylesheet" href="add.css">
-            <?php
+        <div class="header">
+                <h1>在庫管理システム</h1>
+            </div>
+            <div class="form">
+                <h2>商品追加</h2>            
+        <?php
 
             try
             {
@@ -28,7 +33,7 @@
             $dbh=null;
 
             print $product_name;
-            print'を追加しました。<br>';
+            print'を追加しました。<br><br>';
 
             }catch(Exception$e)
             {
@@ -38,8 +43,6 @@
             }
 
             ?>
-
-            <a href="p_admin_top.php">戻る</a>
-
+            <a href="p_admin_top.php"class=button>OK</a>
         </body>    
 </html>    

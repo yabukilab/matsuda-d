@@ -2,15 +2,15 @@
 <html lang="ja">
 <head>
         <meta charset="UTF-8">
-        <title>スタッフ情報削除確認</title>
-        <link rel="stylesheet" href="delete.css">
+        <title>スタッフ削除確認</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
     <div class="header">
         <h1>在庫管理システム</h1>
     </div>
-    <div class="delete-form">
-    <h2>スタッフ情報削除確認</h2>
+    <div class="form">
+    <h2>スタッフ削除</h2>
     <?php
 
     $s_code=$_POST['code'];
@@ -25,6 +25,7 @@
     {
         print'スタッフコード:';
         print$s_code;
+        print'を削除します';
         print'<br>';
     }
 
@@ -36,12 +37,13 @@
     }
     else
     {
-        
         print'<form method="post"action="staff_delete_done.php">';
         print'<input type="hidden"name="code"value="'.$s_code.'">';
         print'<br>';
+        print'<div class="form-actions">';
         print'<input type="button"onclick="history.back()"value="戻る">';
         print'<input type="submit"value="次へ">';
+        print'</div>';
         print'</form>';
     }
     ?>

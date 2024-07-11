@@ -3,9 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>商品削除</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-    <link rel="stylesheet" href="delete.css">
+    <div class="header">
+        <h1>在庫管理システム</h1>
+    </div>
+    <div class="form">
+    <h2>商品削除</h2>
     <?php
 
         require 'db.php';
@@ -34,7 +39,7 @@
 			}
 
 		?>
-		<a href="p_admin_top.php">戻る</a>
-
+		<a href="p_admin_top.php"class=button>OK</a>
+        </div>
     </body>
 </html>

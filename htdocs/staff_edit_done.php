@@ -3,13 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>DB登録</title>
-		<link rel="stylesheet" href="edit.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 	<div class="header">
-        在庫管理システム
+        <h1>在庫管理システム<h1>
     </div>
-    <div class="edit-form">
+    <div class="form">
 		<?php
 
 			require 'db.php';
@@ -27,7 +27,8 @@
 
 				$db=null;
 
-				print '修正しました。<br />';
+				print'<h2>スタッフ修正<br /></h2>';
+				print '修正しました。<br /><br>';
 
 			}
 			catch(Exception$e)
@@ -37,7 +38,7 @@
 			}
 
 		?>
-		<a href="s_admin_top.php">戻る</a>
-		</div>
+		<a href="s_admin_top.php"class="button">OK</a>
+</div>
 	</body>
 </html>

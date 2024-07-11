@@ -3,9 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>ログイン確認</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-    <link rel="stylesheet" href="login.css">
+    <div class="header">
+    <h1>在庫管理システム</h1>
+    </div>
+    <div class="form">
+        <h2>スタッフログイン</h2>
 <?php
 
 try

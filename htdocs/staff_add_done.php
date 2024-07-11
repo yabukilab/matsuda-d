@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>スタッフ追加完了</title>
-        <link rel="stylesheet" href="staff_add.css">
+        <link rel="stylesheet" href="style.css">
     </head>
         <body>
             <div class="header">
                 <h1>在庫管理システム</h1>
             </div>
-            <div class="login-form">
-                <h2>スタッフ追加確認</h2>
+            <div class="form">
+                <h2>スタッフ追加</h2>
                     <?php
 
                 
@@ -25,12 +25,12 @@
                         $prepare->execute(); # 実行
                         $dbh=null;
                         print $s_name;
-                        print'を追加しました。<br>';
+                        print'を追加しました。<br><br>';
 
                         
                     ?>
 
-                    <a href="s_admin_top.php">戻る</a>
+                <a href="s_admin_top.php"class="button">OK</a>
                 </div>
         </body>    
 </html>    

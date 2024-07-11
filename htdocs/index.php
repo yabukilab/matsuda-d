@@ -8,9 +8,18 @@ session_regenerate_id(true);
 <head>
 <meta charset="UTF-8">
 <title>商品一覧</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div class="header">
+    <h1>いらっしゃいませ</h1>
+    </div>
+	<div class="link">
+	<a href="login.php"class=nav>スタッフの方はこちら</a>
+	<a href="shop_cartlook.php"class=nav>カートを見る</a>
+	</div>
+    <div class="formtop">
+        <h2>商品一覧</h2>
 <?php
 
 try
@@ -23,8 +32,6 @@ $stmt=$db->prepare($sql);
 $stmt->execute();
 
 $dbh=null;
-
-print '商品一覧<br /><br />';
 
 while(true)
 {
@@ -40,9 +47,6 @@ while(true)
 	print '<br />';
 }
 
-print '<br />';
-print '<a href="shop_cartlook.php">カートを見る</a><br />';
-
 }
 catch (Exception $e)
 {
@@ -51,6 +55,5 @@ catch (Exception $e)
 }
 
 ?>
-<a href="login.php">スタッフの方はこちら</a>
 </body>
 </html>

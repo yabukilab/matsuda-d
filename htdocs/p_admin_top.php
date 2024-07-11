@@ -2,17 +2,20 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>商品一覧</title>
+        <title>商品管理</title>
     </head>
     <body>
-	<link rel="stylesheet" href="p_admin_top.css">
-    在庫管理<br>
-    <br>
-    <a href="product_add.php">商品追加</a>
-    <a href="product_delete.php">商品削除</a>
-    <a href="product_edit.php">商品編集</a><br>
-    <br>
-<?php
+		<link rel="stylesheet" href="style.css">
+		<div class="header">
+			<h1>在庫管理システム<h1>
+		</div>
+	<div class="link">
+		<a href="product_add.php"class=nav>商品追加</a>
+		<a href="product_delete.php"class=nav>商品削除</a>
+		<a href="product_edit.php"class=nav>商品編集</a>
+	</div>
+	<div class="formtop">
+	<?php
 
 require 'db.php';
 
@@ -28,7 +31,7 @@ try
 
 				$db=null;
 
-				print '商品一覧<br /><br />';
+				print '<h2>商品管理</h2>';
 
 				$count = $stmt -> rowCount();
 				for ($i = 0; $i < $count; $i++)
@@ -48,8 +51,9 @@ try
 	 			exit();
 			}
 ?>
+</div>
     <br>
-    <a href="admin_top.php">管理者top</a>
-    <a href="s_admin_top.php">スタッフ管理</a>
+    <a href="admin_top.php"class=tra>管理者top</a>
+    <a href="s_admin_top.php"class=tra>スタッフ管理</a>
     </body>    
     </html>    

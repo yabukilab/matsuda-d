@@ -2,15 +2,15 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>スタッフ情報削除</title>
-        <link rel="stylesheet" href="delete.css">
+        <title>スタッフ削除完了</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
     <div class="header">
         <h1>在庫管理システム</h1>
     </div>
-    <div class="delete-form">
-    <h2>スタッフ情報削除確認</h2>
+    <div class="form">
+    <h2>スタッフ削除</h2>
     <?php
 
         require 'db.php';
@@ -30,16 +30,18 @@
 
 				$db=null;
 
-				print '削除しました。<br />';
-    }    
-    catch(Exception$e)
+				print '削除しました。<br><br>';
+    }
+        catch(Exception$e)
 			{
 				echo '障害により大変ご迷惑をおかけしております。' . h($e->getMessage());
 	 			exit();
 			}
 
 		?>
-		<a href="s_admin_top.php">戻る</a>
+        
+		<a href="s_admin_top.php"class="button">OK</a>
+        
 </div>
     </body>
 </html>

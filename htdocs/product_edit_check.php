@@ -4,9 +4,12 @@
         <meta charset="UTF-8">
         <title>商品編集確認</title>
     </head>
+    <link rel="stylesheet" href="style.css">
     <body>
-    <link rel="stylesheet" href="edit.css">
-
+    <div class="header">
+        <h1>在庫管理システム</h1>
+    </div>
+    <div class="form">
     <?php
 
 require_once 'db.php';
@@ -47,7 +50,7 @@ catch(Exception $e)
 
 ?>
 
-商品修正<br />
+<h2>商品修正<br /></h2>
 <br />
 
 <form method="post" action="product_edit_done.php">
@@ -56,19 +59,20 @@ catch(Exception $e)
 <input type="hidden" name="code" value="<?php print $p_code; ?>"><br />
 
 商品名<br />
-<input type="text" name="name" style="width:200px" value="<?php print $p_name; ?>"><br />
+<input type="text" name="name"  value="<?php print $p_name; ?>"><br />
 
 値段<br />
-<input type="text" name="price" style="width:50px" value="<?php print $p_price; ?>"><br />
+<input type="text" name="price"  value="<?php print $p_price; ?>"><br />
 
 在庫数<br />
-<input type="text" name="zaikosuu" style="width:50px" value="<?php print $p_zaikosuu; ?>"><br />
+<input type="text" name="zaikosuu"  value="<?php print $p_zaikosuu; ?>"><br />
 
 商品画像<br>
 <input type="file" name="gazou" style="width: 400px" value="<?php print $p_gazou; ?>"><br><br>
+<div class="form-actions">
 <input type="button" onclick="history.back()" value="戻る">
 <input type="submit" value="次へ">
-
+</div>
 </form>
 
 

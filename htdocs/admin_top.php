@@ -3,18 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <title>管理者top</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-    <link rel="stylesheet" href="admin_top.css">
-    管理者top
+    <div class="header">
+            <h1>在庫管理システム</h1>
+        </div>
+        <div class="form">
+    <h2>管理者top</h2>
+    <a href="p_admin_top.php"class=tra>在庫管理</a>
     <br>
+    <a href="s_admin_top.php"class=tra>スタッフ管理</a>
     <br>
-    <a href="p_admin_top.php">在庫管理</a>
+    <a href="order_download.php"class=tra>注文ダウンロード</a>
     <br>
-    <a href="s_admin_top.php">スタッフ管理</a>
-    <br>
-    <a href="order_download.php">注文ダウンロード</a>
-    <br>
-    <a href="index.php">お客様画面へ戻る</a>
+    <a href="index.php"class=tra>お客様画面へ戻る</a>
+    </form>
     </body>
 </html>    
