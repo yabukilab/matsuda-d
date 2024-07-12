@@ -40,7 +40,9 @@ try
 					print h($rec['code']).' ';
 					print h($rec['name']).' ';
 					print h($rec['price']);
-                    print'円';
+                    print'円'.' ';
+					print h($rec['zaikosuu']);
+					print'コ';
 					print '<br />';
 				}
 
