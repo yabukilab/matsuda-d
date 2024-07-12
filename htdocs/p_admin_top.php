@@ -41,6 +41,8 @@ try
 					print h($rec['name']).' ';
 					print h($rec['price']);
                     print'円'.' ';
+					print h($rec['zaikosuu']);
+					print'コ';
 					print '<br />';
 				}
 
