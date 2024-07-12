@@ -10,7 +10,7 @@
 			<h1>在庫管理システム<h1>
 		</div>
 	<div class="link">
-		<a href="product_add.php"class=nav>商品追加</a>
+		<a href="product_add.php"class=nav>商品追加</a><br>
 		<a href="product_delete.php"class=nav>商品削除</a>
 		<a href="product_edit.php"class=nav>商品編集</a>
 	</div>
