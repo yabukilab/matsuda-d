@@ -7,7 +7,7 @@
     </head>
     <body>
     <div class="header">
-            <h1>在庫管理システム</h1>
+            <h1>a在庫管理システム</h1>
         </div>
         <div class="form">
     <h2>管理者top</h2>
